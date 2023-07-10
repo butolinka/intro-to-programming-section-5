@@ -12,7 +12,7 @@ const aboveHundredMessage = document.getElementById('above-hundred');
 
 let targetNumber;
 
-let maxNumberOfAttempts = 5;
+const maxNumberOfAttempts = 5;
 let attempts = 0;
 // Returns a random number from min (inclusive) to max (exclusive)
 // Usage:
@@ -87,11 +87,11 @@ function setup() {
   console.log(`target number: ${targetNumber}`);
 
   // Reset number of attempts
-  maxNumberOfAttempts = 5;
+  const maxNumberOfAttempts = 5;
 
 
   // Enable the input and submit button
-  submitButton.disabeld = false;
+  submitButton.disabled = false;
   guessInput.disabled = false;
 
   hideAllMessages();
